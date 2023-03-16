@@ -1,0 +1,12 @@
+body {  
+    background-color: #add8e6;
+}
+h1, li, footer{
+	color: #010CA7;
+    font-family: 'Golos Text', sans-serif;
+    ;
+}
+
+main{
+    display: grid;
+}
