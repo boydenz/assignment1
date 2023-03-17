@@ -4,9 +4,9 @@ body {
 h1, li, footer{
 	color: #010CA7;
     font-family: 'Golos Text', sans-serif;
-    ;
 }
 
-main{
+.okay{
     display: grid;
+    grid-template-rows: 1fr, 5fr;
 }
