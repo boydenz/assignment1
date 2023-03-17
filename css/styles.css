@@ -1,7 +1,7 @@
 body {  
     background-color: #add8e6;
 }
-h1, li, footer{
+h1, li, footer, nav{
 	color: #010CA7;
     font-family: 'Golos Text', sans-serif;
 }
@@ -15,12 +15,18 @@ main{
     
 }
 .notetaker{
+    padding: 10px;
     display:flex;
     flex-direction: column;
-    align-content: flex-end
+    align-content: flex-end;
+    justify-content: space-between;
 }
-
-.topbuttons{
+nav{
+    align-self: flex-end;
+    display: flex
+}
+.topbottons{
+    display: flex;
     justify-content: space-between;
 }
 .bottombuttons{
@@ -47,6 +53,7 @@ main{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    align-self: flex-end;
 }
 .save{
     background-color: #68d86b;
