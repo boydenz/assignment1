@@ -12,7 +12,7 @@
 <body>
 
 <main>
-    <div class="sidebar">
+    <section class="sidebar">
         <header>
             <h1>my notes</h1>
         </header>
@@ -20,24 +20,32 @@
                 <li>note one</li>
                 <li>note two</li>
             </ul>
-    </div>
+    </section>
 
-    <div class="notetaker">
+    <section class="notetaker">
         <header>
             <h1>a fun note taker</h1>
         </header>
-            <button class="newnote">new note</button>
-            <button class="darktheme">dark theme</button>
+            <div class="top buttons">
+                <button class="newnote">new note</button>
+                <button class="darktheme">dark theme</button>
+            </div>
+            
             <textarea id="notes" name="notes"> place holder! </textarea>
-            <button class="save">save</button>
-            <button class="cancel">cancel</button>
-    </div>
+
+            <div class="bottom buttons">
+                <button class="save">save</button>
+                <button class="cancel">cancel</button>
+            </div>
+        <footer>    
+                <div class="socials">
+                    <h2>keep in touch!</h2>
+                </div>
+        </footer>
+    </section>
 </main>
 
 <footer>
-    <div class="socials">
-            <h2>keep in touch!</h2>
-    </div>
 </footer>
 
 </body>

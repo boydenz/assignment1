@@ -5,8 +5,16 @@ h1, li, footer{
 	color: #010CA7;
     font-family: 'Golos Text', sans-serif;
 }
-
-.okay{
+main{
     display: grid;
-    grid-template-rows: 1fr, 5fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+.sidebar{
+    background-color: #78c5df;
+    align-items: stretch;
+}
+.notetaker{
+    display:flex
 }
