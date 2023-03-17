@@ -1,28 +1,16 @@
 body {  
-    background-color: #add8e6;
+    background-color: #F3E9DE;
 }
 h1, li, footer, nav{
-	color: #010CA7;
+	color: #256993;
     font-family: 'Golos Text', sans-serif;
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+.sidebar{
+    background-color: #FAF4EC;
 }
 
-.sidebar{
-    background-color: #78c5df;
-    
-}
-.notetaker{
-    padding: 10px;
-    display:flex;
-    flex-direction: column;
-    align-content: flex-end;
-    justify-content: space-between;
-}
 nav{
-    align-self: flex-end;
+    align-self: center;
     display: flex
 }
 .topbottons{
@@ -33,7 +21,8 @@ nav{
     align-self: flex-end;
 }
 .newnote{
-    background-color: #5d7fc3;
+    background-color: #256993;
+    border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -43,7 +32,8 @@ nav{
     cursor: pointer;
 }
 .darktheme{
-    background-color: #4e3bdf;
+    background-color: #56536A;
+    border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -54,7 +44,8 @@ nav{
     align-self: flex-end;
 }
 .save{
-    background-color: #68d86b;
+    background-color: #375F68;
+    border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -64,7 +55,8 @@ nav{
     cursor: pointer;
 }
 .cancel{
-    background-color: #d34b50;
+    background-color: #9B332C;
+    border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -83,6 +75,24 @@ textarea{
     border-radius: 4px;
     background-color: #f8f8f8;
 }
-header, footer{
+h1, footer{
     text-align: center;
+}
+
+@media screen and (min-width: 600px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    .notetaker{
+        padding: 10px;
+        display:flex;
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: space-between;
+    }
+    nav{
+        align-self: flex-end;
+        display: flex
+    }
 }
