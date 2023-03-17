@@ -8,13 +8,24 @@ h1, li, footer{
 main{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
 }
 
 .sidebar{
     background-color: #78c5df;
-    align-items: stretch;
+    
 }
 .notetaker{
-    display:flex
+    display:flex;
+    flex-direction: column;
+    align-content: flex-end
+}
+
+header{
+    align-items: center;
+}
+.topbuttons{
+    justify-content: space-between;
+}
+.bottombuttons{
+    align-self: flex-end;
 }
