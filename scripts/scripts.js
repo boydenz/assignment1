@@ -15,3 +15,9 @@ const themeClass = "dark-theme";
 const lightTextClass = "light-text";
 const darkTextClass = "dark-text";
 const defaultNote = sidebar.firstElementChild;
+
+// Add event listeners to the buttons
+darkThemeButton.addEventListener("click", toggleTheme);
+cancelButton.addEventListener("click", hideTextArea);
+newNoteButton.addEventListener("click", toggleTextArea);
+saveButton.addEventListener("click", saveNote);
