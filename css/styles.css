@@ -2,32 +2,36 @@ body {
     background-color: #F3E9DE;
     color: #256993;
     font-family: 'Golos Text', sans-serif;
-  }
-  
-  h1, li, footer, nav {
+}
+
+body, main {
+    height: 100vh;
+}
+
+h1, li, footer, nav {
     font-family: inherit;
-  }
+}
   
-  .sidebar {
+.sidebar {
     background-color: #FAF4EC;
     color: #256993;
-  }
+}
   
-  nav {
+nav {
     align-self: center;
     display: flex;
-  }
+}
   
-  .topbottons {
+.topbottons {
     display: flex;
     justify-content: space-between;
-  }
+}
   
-  .bottombuttons {
+.bottombuttons {
     align-self: flex-end;
-  }
+}
   
-  .newNoteButton, .darkThemeButton, .saveButton, .cancelButton {
+.newNoteButton, .darkThemeButton, .saveButton, .cancelButton {
     background-color: #256993;
     border: none;
     color: white;
@@ -37,22 +41,22 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
   
-  .darkThemeButton {
+.darkThemeButton {
     background-color: #56536A;
     align-self: flex-end;
-  }
+}
   
-  .saveButton {
+.saveButton {
     background-color: #375F68;
-  }
+}
   
-  .cancelButton {
+.cancelButton {
     background-color: #9B332C;
-  }
+}
   
-  textarea {
+textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
@@ -60,28 +64,28 @@ body {
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
-  }
+}
   
-  h1, footer {
+h1, footer {
     text-align: center;
-  }
+}
   
-  body.dark-theme {
+body.dark-theme {
     background-color: #333;
     color: #fff;
-  }
+}
   
-  .sidebar.dark-theme {
+.sidebar.dark-theme {
     background-color: #222;
     color: #fff;
-  }
+}
   
-  .notetaker.dark-theme {
+.notetaker.dark-theme {
     background-color: #444;
     color: #fff;
-  }
+}
   
-  @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     main {
       display: grid;
       grid-template-columns: 1fr 4fr;
@@ -98,4 +102,4 @@ body {
     nav {
       align-self: flex-end;
     }
-  }
+}
