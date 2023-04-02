@@ -43,11 +43,26 @@ function toggleTextArea() {
     }
     newNoteButton.textContent = (newNoteButton.textContent === 'New Note') ? 'Clear' : 'New Note';
   }
-  
+
 // Hide textarea
 function hideTextArea() {
     const textareaContainer = document.querySelector('.notetaker .textarea-container');
     textareaContainer.classList.add('hidden');
     saveButton.classList.add('hidden');
     cancelButton.classList.add('hidden');
+  }
+
+// Save note
+function saveNote() {
+    const title = prompt('Please enter a title for your note:');
+    if (title !== null && title !== '') {
+      const note = {title: title, body: textarea.value};
+      notesArray.push(note);
+      const listItem = document.createElement('li');
+      const textNode = document.createTextNode(note.title);
+      listItem.appendChild(textNode);
+      sidebarList.appendChild(listItem);
+      textarea.value = '';
+      toggleTextArea();
+    }
   }
