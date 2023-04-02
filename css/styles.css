@@ -1,26 +1,33 @@
 body {  
     background-color: #F3E9DE;
-}
-h1, li, footer, nav{
-	color: #256993;
+    color: #256993;
     font-family: 'Golos Text', sans-serif;
-}
-.sidebar{
+  }
+  
+  h1, li, footer, nav {
+    font-family: inherit;
+  }
+  
+  .sidebar {
     background-color: #FAF4EC;
-}
-
-nav{
+    color: #256993;
+  }
+  
+  nav {
     align-self: center;
-    display: flex
-}
-.topbottons{
+    display: flex;
+  }
+  
+  .topbottons {
     display: flex;
     justify-content: space-between;
-}
-.bottombuttons{
+  }
+  
+  .bottombuttons {
     align-self: flex-end;
-}
-.newNoteButton{
+  }
+  
+  .newNoteButton, .darkThemeButton, .saveButton, .cancelButton {
     background-color: #256993;
     border: none;
     color: white;
@@ -30,43 +37,22 @@ nav{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}
-.darkThemeButton{
+  }
+  
+  .darkThemeButton {
     background-color: #56536A;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
     align-self: flex-end;
-}
-.saveButton{
+  }
+  
+  .saveButton {
     background-color: #375F68;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.cancelButton{
+  }
+  
+  .cancelButton {
     background-color: #9B332C;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-textarea{
+  }
+  
+  textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
@@ -74,39 +60,42 @@ textarea{
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
-}
-h1, footer{
+  }
+  
+  h1, footer {
     text-align: center;
-}
-
-body.dark-theme {
+  }
+  
+  body.dark-theme {
     background-color: #333;
     color: #fff;
-}
+  }
   
-.sidebar.dark-theme {
+  .sidebar.dark-theme {
     background-color: #222;
     color: #fff;
-}
+  }
   
-.notetaker.dark-theme {
+  .notetaker.dark-theme {
     background-color: #444;
     color: #fff;
-}
-@media screen and (min-width: 600px){
-    main{
-        display: grid;
-        grid-template-columns: 1fr 4fr;
+  }
+  
+  @media screen and (min-width: 600px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
     }
-    .notetaker{
-        padding: 10px;
-        display:flex;
-        flex-direction: column;
-        align-content: flex-end;
-        justify-content: space-between;
+  
+    .notetaker {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-content: flex-end;
+      justify-content: space-between;
     }
-    nav{
-        align-self: flex-end;
-        display: flex
+  
+    nav {
+      align-self: flex-end;
     }
-}
+  }
