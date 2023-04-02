@@ -66,3 +66,13 @@ function saveNote() {
       toggleTextArea();
     }
   }
+  
+// Display note
+function displayNote(event) {
+    const target = event.target;
+    if (target.tagName === 'LI') {
+      const title = target.textContent;
+      const note = notesArray.find(note => note.title === title);
+      textarea.value = note.body;
+    }
+  }
