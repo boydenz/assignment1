@@ -3,3 +3,15 @@ var notesArray = [
     { title: "note two", body: "this is my second note"}
 
 ];
+
+// Get the necessary elements from the HTML
+const darkThemeButton = document.querySelector("#dark-theme-button");
+const textarea = document.querySelector("textarea");
+const cancelButton = document.querySelector("#cancel-button");
+const saveButton = document.querySelector("#save-button");
+const newNoteButton = document.querySelector("#new-note-button");
+const sidebar = document.querySelector("#sidebar");
+const themeClass = "dark-theme";
+const lightTextClass = "light-text";
+const darkTextClass = "dark-text";
+const defaultNote = sidebar.firstElementChild;
