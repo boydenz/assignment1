@@ -52,7 +52,6 @@ function hideTextArea() {
     cancelButton.classList.add('hidden');
   }
 
-// Save note
 function saveNote() {
     const title = prompt('Please enter a title for your note:');
     if (title !== null && title !== '') {
@@ -66,8 +65,7 @@ function saveNote() {
       toggleTextArea();
     }
   }
-  
-// Display note
+
 function displayNote(event) {
     const target = event.target;
     if (target.tagName === 'LI') {
