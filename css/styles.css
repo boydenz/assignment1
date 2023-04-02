@@ -79,6 +79,20 @@ h1, footer{
     text-align: center;
 }
 
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+  
+.sidebar.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+  
+.notetaker.dark-theme {
+    background-color: #444;
+    color: #fff;
+}
 @media screen and (min-width: 600px){
     main{
         display: grid;
